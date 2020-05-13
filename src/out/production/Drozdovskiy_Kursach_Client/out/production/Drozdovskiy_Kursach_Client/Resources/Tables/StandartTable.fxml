@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Tables.StandartController">
+    <children>
+        <TableView fx:id="tableview" layoutY="1.0" onMouseClicked="#TableViewClicked" prefHeight="410.0" prefWidth="401.0">
+            <columns>
+                <TableColumn fx:id="columnId" prefWidth="24.0" text="ID" />
+                <TableColumn fx:id="columnName" prefWidth="62.0" text="Название" />
+                <TableColumn fx:id="columnStrength" prefWidth="68.0" text="Прочность" />
+            <TableColumn fx:id="columnWeight" prefWidth="27.0" text="Вес" />
+            <TableColumn fx:id="columnSize" prefWidth="49.0" text="Размер" />
+            <TableColumn fx:id="columnThickness" prefWidth="60.0" text="Толщина" />
+            <TableColumn fx:id="columnAppearance" prefWidth="110.0" text="Внешний вид" />
+            </columns>
+        </TableView>
+        <Button fx:id="buttonAdd" layoutX="417.0" layoutY="14.0" mnemonicParsing="false" onAction="#Add_Pressed" prefHeight="61.0" prefWidth="124.0" text="Добавить" />
+        <Button fx:id="buttonDelete" disable="true" layoutX="417.0" layoutY="154.0" mnemonicParsing="false" onAction="#Delete_Pressed" prefHeight="61.0" prefWidth="124.0" text="Удалить" />
+        <Button fx:id="buttonEdit" disable="true" layoutX="417.0" layoutY="84.0" mnemonicParsing="false" onAction="#Edit_Pressed" prefHeight="61.0" prefWidth="124.0" text="Редактировать" />
+        <Button fx:id="buttonBack" layoutX="417.0" layoutY="224.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="61.0" prefWidth="124.0" text="Назад" />
+    </children>
+</AnchorPane>

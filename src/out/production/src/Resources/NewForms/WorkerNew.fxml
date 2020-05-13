@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="229.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.New.WorkerNewController">
+   <children>
+      <Label layoutX="48.0" layoutY="31.0" text="ФИО:" />
+      <Label layoutX="48.0" layoutY="79.0" text="Должность:" />
+      <Label layoutX="46.0" layoutY="129.0" text="Отдел:" />
+      <TextField fx:id="textfieldName" layoutX="38.0" layoutY="48.0" />
+      <TextField fx:id="textfieldPosition" layoutX="38.0" layoutY="96.0" />
+      <TextField fx:id="textfieldDepartment" layoutX="38.0" layoutY="146.0" />
+      <Button fx:id="buttonOk" layoutX="37.0" layoutY="190.0" mnemonicParsing="false" onAction="#Ok_Pressed" prefHeight="46.0" prefWidth="71.0" text="ОК" />
+      <Button fx:id="buttonBack" layoutX="116.0" layoutY="190.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="46.0" prefWidth="71.0" text="Назад" />
+      <Label fx:id="labelMessage" layoutX="64.0" layoutY="255.0" text="Label" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

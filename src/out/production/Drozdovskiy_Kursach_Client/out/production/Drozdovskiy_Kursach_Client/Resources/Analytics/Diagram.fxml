@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Analytics.DiagramController">
+   <children>
+      <Button fx:id="buttonBack" layoutX="50.0" layoutY="414.0" mnemonicParsing="false" onAction="#Back_Pressed" text="Назад" />
+      <LineChart fx:id="Chart" layoutX="14.0" layoutY="14.0">
+        <xAxis>
+          <CategoryAxis fx:id="categoryAxis" animated="false" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="numberAxis" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ChoiceBox fx:id="choiceboxProduction" layoutX="351.0" layoutY="414.0" onAction="#Produce_Chosen" prefWidth="150.0" />
+      <Label layoutX="236.0" layoutY="418.0" text="Выбор продукции:" />
+   </children>
+</AnchorPane>
